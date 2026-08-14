@@ -1,0 +1,62 @@
+% Plain single-column resume style, mimicking a standard Word/Google Docs template.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{resume_style}
+
+\RequirePackage[a4paper,margin=0.85in]{geometry}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{xcolor}
+\RequirePackage{hyperref}
+\RequirePackage{titlesec}
+\RequirePackage{enumitem}
+\RequirePackage{tabularx}
+\RequirePackage{array}
+\RequirePackage{needspace}
+
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt plus 1pt minus 1pt}
+
+\definecolor{resumeblue}{HTML}{2E74B5}
+\definecolor{resumegray}{HTML}{444444}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=resumeblue,
+    urlcolor=resumeblue,
+    pdftitle={Hazem Lenin - CV},
+    pdfpagemode=FullScreen,
+}
+
+\pagenumbering{gobble}
+
+\titleformat{\section}
+  {\bfseries\color{resumeblue}}
+  {}{0em}{}
+  [\vspace{-2pt}{\color{resumeblue}\titlerule}\vspace{2pt}]
+\titlespacing*{\section}{0pt}{12pt}{4pt}
+
+\setlist[itemize]{leftmargin=1.2em, itemsep=1pt, topsep=1pt, parsep=0pt}
+
+\newcommand{\cvheader}[3]{%
+  \begin{center}
+  {\fontsize{26}{28}\selectfont\bfseries #1}\\[2pt]
+  {\large\color{resumegray} #2}\\[2pt]
+  {\small #3}
+  \end{center}
+  \vspace{2pt}
+}
+
+% \cventryhead{Left title/company text}{Right-aligned date range}
+\newcommand{\cventryhead}[2]{%
+  \needspace{3\baselineskip}
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \bfseries #1 & \normalfont\color{resumegray} #2
+  \end{tabularx}\vspace{-2pt}
+}
+
+% Usage: \renewcommand{\arraystretch}{1.3}\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{0.16\textwidth} X@{}}
+%          \skillrow{Category}{Description} ... \end{tabularx}
+\newcommand{\skillrow}[2]{#1 & #2 \\}
+
+\endinput

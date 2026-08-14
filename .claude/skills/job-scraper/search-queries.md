@@ -1,7 +1,5 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
-
 ## Installed portal CLIs (primary for `/scrape`)
 
 `/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Shipped country-agnostic CLIs include `linkedin-search` and `freehire-search`; Danish demos and any skill you add with `/add-portal` are included the same way. You do **not** need a matching `site:` line below for those CLIs to run.
@@ -12,69 +10,77 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary:
+- **linkedin.com/jobs** - LinkedIn job listings (filters: Egypt, Remote, Gulf, EU); also covered by `linkedin-search` CLI
+- **wuzzuf.net** - largest Egyptian job board
+- **remoteok.com** / **weworkremotely.com** - remote-first boards
+
+Note: the built-in Danish portal CLIs (Jobindex, Jobnet, etc.) are not relevant for this market. Scaffold local portal integrations with `/add-portal` if needed.
 
 Secondary (company career pages via Google):
 - Direct Google searches with `site:` filters for known target companies
 
 ## Query Categories
 
-Queries are grouped by priority. Write **each category in every language from your Languages table** (see Language scope above). Combine each query with your location terms (e.g. your city, region, or metro area) where the site supports it.
+Queries are grouped by priority. Write **each category in every language from your Languages table** (see Language scope above; currently just English). Combine each query with your location terms (Egypt, Remote, Gulf cities, EU) where the site supports it.
 
 **Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: .NET / Backend
 
-These match your strongest and most desired career direction.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
-```
-
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
-
-These match your domain expertise.
+Strongest and most desired direction.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:linkedin.com/jobs ".NET Developer" remote OR Egypt
+site:linkedin.com/jobs ".NET Engineer" remote OR Egypt
+site:linkedin.com/jobs "Backend Engineer" ".NET" remote
+site:wuzzuf.net ".NET Developer"
+site:wuzzuf.net "Backend Developer"
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 2: Full Stack / Angular
 
-Adjacent roles you could pivot into.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
-```
-
-### Priority 4: Broader Technical / Consulting
-
-Wider net for general technical roles.
+Direct match for the Angular + .NET full-stack profile.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "Full Stack Developer" ".NET" Angular remote OR Egypt
+site:linkedin.com/jobs "Angular Developer" remote OR Egypt
+site:wuzzuf.net "Full Stack Developer"
+site:wuzzuf.net "Angular Developer"
+```
+
+### Priority 3: Mobile / NestJS
+
+Adjacent roles backed by real experience.
+
+```
+site:linkedin.com/jobs "Mobile Developer" Capacitor OR Ionic OR Angular remote OR Egypt
+site:linkedin.com/jobs "NestJS" developer remote
+site:wuzzuf.net "Mobile Developer"
+```
+
+### Priority 4: Broader Software Engineering
+
+Wider net, including Gulf/EU relocation and tooling/lead-track roles.
+
+```
+site:linkedin.com/jobs "Software Engineer" ".NET" Dubai OR Riyadh OR Qatar
+site:linkedin.com/jobs "Software Engineer" ".NET" relocation Europe
+site:linkedin.com/jobs "Software Developer" remote Egypt
+site:linkedin.com/jobs "developer tooling" OR "platform engineer" ".NET" OR TypeScript remote
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+Acceptable locations, in order of preference:
+- Remote (worldwide) - ideal
+- Alexandria, Egypt (on-site/hybrid) - ideal
+- Cairo, Egypt - acceptable if hybrid/flexible
+- Gulf (UAE, Saudi Arabia, Qatar, Kuwait) with relocation package - acceptable
+- EU with relocation/visa sponsorship - acceptable
+- On-site elsewhere without relocation support - too far
+
+Salary floor: 1300 USD/month minimum when based in Egypt (including remote roles). Flag postings below this.
 
 ## Language Filter
 

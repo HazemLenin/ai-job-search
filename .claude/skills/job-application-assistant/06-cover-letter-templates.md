@@ -4,6 +4,19 @@ framework_version: 1.0.2
 
 # Cover Letter Templates and Tailoring Guide
 
+<!-- BEGIN ACTIVE-TEMPLATE (managed by /add-template - do not edit by hand) -->
+> **Active template override: `plain-column`**
+>
+> A custom template is active. Where this block conflicts with the stock guidance below, this block wins. Structural advice below (tailoring, page-budget, cutting rules) still applies.
+>
+> - **Template skeleton:** `templates/cover_letters/plain-column/template.tex` — use this as the structural reference instead of the stock `cover.cls` template
+> - **Manifest:** `templates/cover_letters/plain-column/TEMPLATE.md` — read this for style rules and known pitfalls before drafting
+> - **Compile with:** `xelatex` (same engine as the stock guidance below, no change needed)
+> - **Fonts:** system default sans-serif (`\sfdefault`) — no bundled fonts, nothing to install
+> - **Page limit:** exactly 1 page(s)
+> - **Output file:** unchanged (`cover_letters/cover_<company>_<role>.tex`); copy `letter_style.sty` from the template folder into `cover_letters/` if not already present (it already is, as of 2026-08-13). No `\lettercontent{}` wrapper macro exists in this template, so the itemize-inside-macro pitfall described below does not apply.
+<!-- END ACTIVE-TEMPLATE -->
+
 ## Template: Custom cover.cls (XeLaTeX)
 
 Cover letters use a custom LaTeX document class (`cover.cls`) with Lato/Raleway fonts.

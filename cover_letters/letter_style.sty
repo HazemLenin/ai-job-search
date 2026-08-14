@@ -1,0 +1,49 @@
+% Plain single-column cover letter style, matching resume_style.sty (cv/).
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{letter_style}
+
+\RequirePackage[a4paper,margin=1in]{geometry}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{xcolor}
+\RequirePackage{hyperref}
+\RequirePackage{enumitem}
+\RequirePackage{parskip}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{resumeblue}{HTML}{2E74B5}
+\definecolor{resumegray}{HTML}{444444}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=resumeblue,
+    urlcolor=resumeblue,
+    pdftitle={Hazem Lenin - Cover Letter},
+    pdfpagemode=FullScreen,
+}
+
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt plus 1pt minus 1pt}
+
+\setlist[itemize]{leftmargin=1.2em, itemsep=3pt, topsep=4pt, parsep=0pt}
+
+\newcommand{\letterheader}[2]{%
+  \begin{center}
+  {\fontsize{22}{24}\selectfont\bfseries #1}\\[3pt]
+  {\small #2}
+  \end{center}
+  \vspace{6pt}
+}
+
+\newcommand{\letterdate}[1]{%
+  \begin{flushright}\color{resumegray}#1\end{flushright}
+  \vspace{-4pt}
+}
+
+\newcommand{\lettersignoff}[2]{%
+  #1\\[18pt]
+  #2
+}
+
+\endinput

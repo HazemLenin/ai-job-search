@@ -1,14 +1,13 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Hazem Lenin
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
 \documentclass[11pt,a4paper,sans]{moderncv}
 \moderncvstyle{banking}
-\moderncvcolor{blue}
+\moderncvcolor{grey}
 
 % Force the name and section headings to render in moderncv blue (color1).
 % Default banking leaves them black: moderncvstylebanking.sty's \colorlet
@@ -37,10 +36,10 @@
 % through \PassOptionsToPackage instead, which is what removes that clash.
 \AtEndPreamble{\hypersetup{
     colorlinks=true,
-    linkcolor=blue,
+    linkcolor=black,
     filecolor=magenta,
-    urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    urlcolor=black,
+    pdftitle={Hazem Lenin - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -50,13 +49,11 @@
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
-% If you have no address to list, DELETE this whole line. \address{}{}{} fails
-% with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Hazem}{Lenin}
+\address{Alexandria, Egypt}{}{}
+\phone[mobile]{+20 100 235 3194}
+\email{hazemlenin@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/hazem-lenin}{LinkedIn}, \href{https://github.com/HazemLenin}{GitHub}, \href{https://hazemlenin.github.io}{Portfolio}}
 
 \begin{document}
 
@@ -67,7 +64,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Full Stack Developer with 5+ years of experience owning complex modules end-to-end in enterprise B2B systems, from .NET Core API design and Clean Architecture to Angular frontend and production mobile apps. Known for going beyond delivery: restructuring frontend monorepos, implementing MFA flows from scratch, building developer tooling adopted company-wide, and contributing to engineering culture through mentoring and knowledge-sharing.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -77,15 +74,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Backend}: .NET Core (Clean Architecture, CQRS/MediatR, SignalR, EF Core, Identity Server), NestJS, Django REST Framework, microservices and event-driven architecture (RabbitMQ)
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Frontend}: Angular (Signals, standalone components, Nx monorepos), React, Vue.js, Next.js, Redux, TanStack Query
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Mobile}: Capacitor + Angular, Trapeze multi-app native config, FCM push, Fastlane CI/CD, Google Play and App Store releases
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Databases}: MSSQL (EF Core), PostgreSQL (TypeORM), MongoDB (Mongoose)
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{DevOps \& Tooling}: Docker, GitLab CI/CD, GitHub Actions, Playwright e2e, Jest, LLM APIs (Gemini)
 
 \end{itemize}
 
@@ -98,31 +95,58 @@
 \begin{itemize}
 
 % --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{2024--Present}{Software Engineer}{GAMP}{Alexandria, Egypt}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+    \item Software engineer on GapMap, a modular B2B partition management platform serving enterprise clients in Poland (Renk, ZRRT); owned the Contractors module end-to-end across .NET Core API and Angular
+    \item Built full-stack features spanning MFA (Identity Server, recovery codes), PayU payments, subscriptions, a cross-platform feature-toggle system, and raw TCP socket integration with ethernet-connected printers
+    \item Solely owned the mobile project (GapMap and eZRRT, Capacitor + Angular + Trapeze) with FCM push, Fastlane CI/CD, and Google Play/App Store releases
+    \item Cut calendar load time by ~70\% via API redesign and DB query optimization; consolidated 280+ EF Core migrations into one, speeding up local builds by ~40\%
+    \item Co-led a 2-month Nx monorepo restructure consolidating two large Angular apps into a shared component library; set up Playwright e2e testing
+    \item Mentored 3 junior developers, delivered a company-wide knowledge-sharing session recognized as the best KS session, and co-authored the company's engineering competency matrix
 \end{itemize}}}
 
 \vspace{3pt}
 
 % --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{2021--2024}{Software Engineer}{Pixel Academy}{Alexandria, Egypt}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
+    \item Built a course-center management system with C\# ASP.NET Core, Razor Pages, and MSSQL, deployed on IIS, with React and Angular used for select frontend modules
+    \item Built an offline desktop version of the platform with automatic two-way sync to the backend server, plus a data pipeline for converting between Excel files and live system data
+    \item Designed a tailored attendance system tracking attendance history, cross-referencing it against exam attendance and delivered content, and calculating student charges under weekly, monthly, or custom billing plans
 \end{itemize}}}
 
 \vspace{3pt}
 
 % --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{2020--2021}{Full Stack Developer}{Pixel Stamp}{Alexandria, Egypt}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
+    \item Architected and built multiple e-learning platforms from the ground up using Django REST Framework: API design, data modelling, and backend architecture decisions
+    \item Designed and delivered a full learning-center management system covering appointments, scheduling, pricing rules, and financial reporting
+    \item Delivered frontend features across React, Vue.js, and Next.js depending on project requirements
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     OPEN SOURCE PROJECTS
+% ============================================================
+
+\section{Open Source Projects}
+\vspace{3pt}
+\begin{itemize}
+
+\item{\cventry{2024--Present}{Merge Polisher}{\href{https://github.com/HazemLenin/merge-polisher}{github.com/HazemLenin/merge-polisher}}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item AI-powered GitLab/GitHub CI tool that polishes MR/PR descriptions, posts inline code review suggestions, and generates a confidence score based on coverage of critical code paths
+    \item Python with layered architecture (adapters, domain, application, core); Gemini API, retry/fallback LLM handling, Docker deployment, GitHub Actions CI
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{2026--Present}{Learn Flow}{\href{https://github.com/HazemLenin/learn-flow}{github.com/HazemLenin/learn-flow}}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Event-driven e-learning platform: Nx monorepo of 3 NestJS microservices over RabbitMQ plus a React frontend
+    \item MongoDB and PostgreSQL data models, idempotent event consumers, retry/backoff notification pipeline; Docker Compose, Swagger, Jest/Supertest tests, GitHub Actions CI
 \end{itemize}}}
 
 \end{itemize}
@@ -135,14 +159,8 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
-}}
-
-\vspace{3pt}
-
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\item{\cventry{2021--2025}{BBA in Management Information Systems}{Alexandria University}{Alexandria, Egypt}{}{\vspace{1pt}
+Grade: 3.69 / 4.0. Coursework: Statistics, Data Analysis, Business Intelligence, Cloud Computing, Databases, Software Design.
 }}
 
 \end{itemize}
@@ -154,27 +172,18 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
+\item Arabic (native), English (professional working).
 \end{itemize}
 
 % ============================================================
-%     PUBLICATIONS (optional)
+%     CERTIFICATIONS
 % ============================================================
 
-\section{Publications}
+\section{Certifications}
 \vspace{1pt}
 \begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item{\textbf{Software Design and Architecture Specialization} -- University of Alberta / Coursera.}
+\item{\textbf{Web Development Nanodegree} -- Udacity (2022).}
 \end{itemize}
 
 % ============================================================

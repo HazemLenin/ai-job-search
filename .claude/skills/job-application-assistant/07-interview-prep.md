@@ -39,6 +39,98 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 
+## STAR Candidates (Complete Manually)
+
+### Calendar API redesign (~70% load-time cut)
+**Source:** CV / LinkedIn - Software Engineer, GAMP
+**What happened:** Redesigned a calendar API and optimized DB queries, cutting load time by ~70%.
+**Why it matters:** Performance optimization, measurable impact, "tell me about a technical improvement you drove."
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### EF Core migration consolidation (~40% faster builds)
+**Source:** CV / LinkedIn - Software Engineer, GAMP
+**What happened:** Consolidated 280+ EF Core migration files into one, speeding up local builds by ~40%.
+**Why it matters:** Initiative, developer-experience tooling, "describe a time you improved a process nobody asked you to."
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Nx monorepo restructure (co-led, 2 months)
+**Source:** CV / LinkedIn - Software Engineer, GAMP
+**What happened:** Co-led a 2-month restructure consolidating two large Angular apps into a shared component library.
+**Why it matters:** Technical leadership, collaboration, large refactor risk management.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Solo ownership of mobile project (GapMap + eZRRT)
+**Source:** CV / LinkedIn - Software Engineer, GAMP
+**What happened:** Solely owned two Capacitor+Angular mobile apps with FCM, Fastlane CI/CD, and Google Play/App Store releases.
+**Why it matters:** Autonomy, end-to-end delivery, "tell me about something you owned alone."
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Mentoring + knowledge-sharing + competency matrix
+**Source:** CV / LinkedIn - Software Engineer, GAMP
+**What happened:** Mentored 3 junior developers, delivered company-wide KS session recognized as best, co-authored engineering competency matrix.
+**Why it matters:** Leadership, culture contribution, "how do you help others grow?"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### MFA implementation from scratch (Identity Server)
+**Source:** CV / LinkedIn - Software Engineer, GAMP
+**What happened:** Designed and shipped MFA with Identity Server and recovery codes.
+**Why it matters:** Security awareness, complex feature delivery, "walk me through a technically challenging feature."
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Fastlane release automation (removed manual publish step)
+**Source:** Reference letter - COO, GAMP
+**What happened:** Automated mobile releases with Fastlane, eliminating the manual publish step after store review - approved builds now reach users automatically instead of waiting on someone to notice and click "publish".
+**Why it matters:** Process improvement, initiative beyond the ticket, "describe a time you removed friction from a process."
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Merge Polisher presented at internal Knowledge-Sharing session
+**Source:** Reference letter - COO, GAMP
+**What happened:** Built and open-sourced Merge Polisher on own initiative, then presented it at an internal KS session, following an earlier talk on developer productivity ("How to Work Smarter").
+**Why it matters:** Initiative, developer tooling, public speaking/influence, "tell me about a time you influenced practices beyond your own work."
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Earned senior-level trust as youngest engineer on the team
+**Source:** Reference letter - COO, GAMP
+**What happened:** Was the youngest engineer on the GAMP team, yet within months was trusted with work typically given to senior developers, including production systems clients depend on daily.
+**Why it matters:** Fast ramp-up, trust-building, "tell me about a time you had to prove yourself quickly."
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
 ## Common Tough Questions
 
 ### "Why did you leave [previous company]?"

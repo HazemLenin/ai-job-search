@@ -1,0 +1,50 @@
+%% CV Template - Plain Single Column
+%%
+%% Compile with: lualatex template.tex
+
+\documentclass[11pt,a4paper]{article}
+\usepackage{resume_style}
+
+\begin{document}
+
+\cvheader{[YOUR_NAME]}{[YOUR_TARGET_TITLE]}{%
+[YOUR_EMAIL] \textbullet\ [YOUR_PHONE] \textbullet\ [YOUR_LOCATION] \textbullet\ \href{[YOUR_LINKEDIN_URL]}{LinkedIn} \textbullet\ \href{[YOUR_GITHUB_URL]}{GitHub} \textbullet\ \href{[YOUR_PORTFOLIO_URL]}{Portfolio}%
+}
+
+\section{SUMMARY}
+[2-4 sentence profile statement tailored to the target role: years of experience, core stack, one standout achievement or domain match.]
+
+\section{CORE COMPETENCIES}
+\begin{itemize}
+\item \textbf{[Category]}: [comma-separated skills]
+\item \textbf{[Category]}: [comma-separated skills]
+\end{itemize}
+
+\section{PROFESSIONAL EXPERIENCE}
+
+\cventryhead{[Job Title] \textbar\ [Company] \textbullet\ [Location]}{[Start] -- [End]}
+\begin{itemize}
+    \item [Achievement bullet, quantified where honest]
+    \item [Achievement bullet]
+\end{itemize}
+
+\cventryhead{[Job Title] \textbar\ [Company] \textbullet\ [Location]}{[Start] -- [End]}
+\begin{itemize}
+    \item [Achievement bullet]
+\end{itemize}
+
+\section{EDUCATION}
+
+\cventryhead{[Degree] \textbar\ [Institution]}{[Start] -- [End]}
+[Grade / key coursework, one line]
+
+\section{TECHNICAL SKILLS}
+\begin{itemize}
+\item \textbf{[Category]}: [skills]
+\item \textbf{Languages}: [languages]
+\end{itemize}
+
+\section{CERTIFICATIONS}
+\textbf{[Certification]} \textbullet\ [Issuer] ([details])
+
+\end{document}

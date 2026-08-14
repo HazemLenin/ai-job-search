@@ -4,6 +4,19 @@ framework_version: 1.4.4
 
 # CV Templates and Tailoring Guide
 
+<!-- BEGIN ACTIVE-TEMPLATE (managed by /add-template - do not edit by hand) -->
+> **Active template override: `plain-column`**
+>
+> A custom template is active. Where this block conflicts with the stock guidance below, this block wins. Structural advice below (tailoring, page-budget, cutting rules) still applies.
+>
+> - **Template skeleton:** `templates/cv/plain-column/template.tex` — use this as the structural reference instead of the stock moderncv template
+> - **Manifest:** `templates/cv/plain-column/TEMPLATE.md` — read this for style rules and known pitfalls before drafting
+> - **Compile with:** `lualatex` (same engine as the stock guidance below, no change needed)
+> - **Fonts:** system default sans-serif (`\sfdefault`) — no bundled fonts, nothing to install
+> - **Page limit:** exactly 2 page(s)
+> - **Output file:** unchanged (`cv/main_<company>.tex`); copy `resume_style.sty` from the template folder into `cv/` if not already present (it already is, as of 2026-08-13)
+<!-- END ACTIVE-TEMPLATE -->
+
 <!-- SETUP: Profile statements and section ordering are personalized by running /setup -->
 
 ## Template: LaTeX moderncv (Banking Style)
@@ -136,12 +149,8 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
-
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For full-stack / .NET roles:** *[Used for: general CV]*
+> Full Stack Developer with 5+ years of experience owning complex modules end-to-end in enterprise B2B systems - from .NET Core API design and Clean Architecture to Angular frontend and production mobile apps. Known for going beyond delivery: restructuring frontend monorepos, implementing MFA flows from scratch, building developer tooling adopted company-wide, and contributing to engineering culture through mentoring, knowledge-sharing sessions, and the company's official engineering competency matrix.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

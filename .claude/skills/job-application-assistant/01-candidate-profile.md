@@ -4,18 +4,16 @@ framework_version: 1.1.1
 
 # Candidate Profile
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all sections will be filled with your actual information -->
-
 ## Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_ADDRESS]
-- **Phone:** [YOUR_PHONE]
-- **Email:** [YOUR_EMAIL]
-- **LinkedIn:** [YOUR_LINKEDIN_URL]
-- **GitHub:** [YOUR_GITHUB_URL]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **Constraints:** [YOUR_COMMUTE_OR_LOCATION_CONSTRAINTS]
+- **Name:** Hazem Lenin
+- **Location:** Alexandria, Egypt
+- **Phone:** +201002353194
+- **Email:** hazemlenin@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/hazem-lenin
+- **GitHub:** https://github.com/HazemLenin
+- **Portfolio:** https://hazemlenin.github.io
+- **Status:** GAMP's Egyptian branch is closing 30 Jul 2026 (business reasons, unrelated to performance); actively seeking new opportunities, available immediately after
+- **Constraints:** Based in Alexandria, Egypt; open to remote and on-site
 
 ### Languages
 <!-- Every language you can work in professionally, with your honest level. Used by the
@@ -25,49 +23,84 @@ a hard no, not a gap to smooth over. -->
 
 | Language | Level | Notes |
 |----------|-------|-------|
-| [LANGUAGE] | [LEVEL, e.g. "Native" / "C2" / "B1/B2 (conversational)"] | [optional] |
+| Arabic | Native | |
+| English | Professional working proficiency | |
 
 ## Education
 
 | Degree | Period | Institution | Key Topics |
 |--------|--------|-------------|------------|
-| [DEGREE] | [YEARS] | [INSTITUTION] | [TOPICS] |
+| BBA, Management Information Systems (GPA 3.69/4.0) | Oct 2021 - Jun 2025 | Alexandria University | Statistics, Accounting, Data Analysis, Business Intelligence, Cloud Computing, Databases, Software Design |
+| Nanodegree, Web Development | Sep - Nov 2022 | Udacity | Web development |
 
 ## Professional Experience
 
-### [JOB_TITLE] - [COMPANY] ([START] - [END])
-[LOCATION]
-- [RESPONSIBILITY_OR_ACHIEVEMENT_1]
-- [RESPONSIBILITY_OR_ACHIEVEMENT_2]
-- [RESPONSIBILITY_OR_ACHIEVEMENT_3]
+### Software Engineer - GAMP (Mar 2024 - Jul 2026)
+Alexandria, Egypt (IT Services & Software Development; enterprise clients in Poland)
+- Software engineer on GapMap, a modular B2B partition management platform serving enterprise clients in Poland (Renk, ZRRT); owned the Contractors module end-to-end across .NET Core API and Angular - domain modelling, EF Core schema, API design, and UI components
+- Built full-stack features spanning MFA (Identity Server, recovery codes), PayU payments, subscriptions, shipment, a cross-platform feature-toggle system, and raw TCP socket integration with ethernet-connected printers
+- Solely owned the mobile project - GapMap and eZRRT (Capacitor + Angular + Trapeze) with FCM push, native config, Fastlane CI/CD, and Google Play/App Store releases; fully automated the release publish step so approved builds reach users without manual intervention
+- Responsible for Pay-Station, a kiosk-machine module within GapMap letting on-site customers pay for their parking time - kiosk UI, payment flow, and hardware/printer integration
+- Applied Clean Architecture, Repository pattern, CQRS (MediatR), and SignalR across .NET Core services; co-led a 2-month Nx monorepo restructure consolidating two large Angular apps (5 modules) into a shared component library; set up Playwright e2e testing
+- Cut calendar load time by ~70% by redesigning the API and optimizing DB queries
+- Consolidated 280+ EF Core migration files for the MSSQL database into a single migration, speeding up local builds by ~40%
+- Mentored 3 junior developers, conducted technical interviews, delivered a company-wide knowledge-sharing session recognized as the best KS session, and co-authored the company's engineering competency matrix
 
-<!-- Add more roles as needed -->
+### Software Engineer - Pixel Academy (Oct 2021 - Mar 2024)
+Alexandria, Egypt
+- Built a course-center management system with C# ASP.NET Core, Razor Pages, and MSSQL, deployed on IIS, with React and Angular used for select frontend modules
+- Built an offline desktop version of the platform with automatic two-way sync to the backend server, plus a data pipeline for converting between Excel files and live system data
+- Designed a tailored attendance system tracking attendance history, cross-referencing it against exam attendance and delivered content, and calculating student charges under weekly, monthly, or custom billing plans
+
+### Full Stack Developer - Pixel Stamp (Oct 2020 - Jun 2021)
+Alexandria, Egypt
+- Architected and built multiple e-learning platforms from the ground up using Django REST Framework - API design, data modelling, and backend architecture decisions
+- Designed and delivered a full learning-center management system covering appointments, scheduling, pricing rules, and financial reporting
+- Delivered frontend features across React, Vue.js, and Next.js depending on project requirements
 
 ## Independent Projects
-<!-- Projects outside of employment: freelance, open source, personal -->
-- **[PROJECT_NAME]**: [DESCRIPTION]
+- **Merge Polisher** (github.com/HazemLenin/merge-polisher, 2024 - Present): AI-powered GitLab/GitHub CI tool that polishes MR/PR descriptions, posts inline code review suggestions, and generates a confidence score based on coverage of critical code paths. Python, layered architecture (adapters, domain, application, core), Gemini API, retry/fallback LLM handling, Docker deployment, GitHub Actions CI.
+- **Learn Flow** (github.com/HazemLenin/learn-flow, 2026 - Present): Event-driven mini e-learning platform. Nx monorepo of 3 NestJS microservices (Catalog, Enrollment, Notification) over RabbitMQ, plus React frontend. MongoDB (Mongoose) and PostgreSQL (TypeORM) data models, idempotent event consumers, mock-payment flow, retry/backoff email notification pipeline. Docker Compose, Swagger, Jest/Supertest unit + integration tests, GitHub Actions CI.
 
 ## Technical Skills
 
-### Programming & ML
-- **[LANGUAGE]** ([PROFICIENCY]): [FRAMEWORKS_AND_LIBRARIES]
-- [OTHER_SKILLS]
+### Backend
+- **.NET Core** (primary): Clean Architecture, Repository pattern, CQRS (MediatR), SignalR, EF Core, Identity Server
+- **NestJS**: microservices, event-driven architecture (RabbitMQ), TypeORM, Mongoose
+- **Django** (Python): Django REST Framework
+- REST APIs, microservices, event-driven architecture
 
-### Domain Expertise
-- [DOMAIN_1]
-- [DOMAIN_2]
+### Frontend
+- **Angular** (primary): Signals, standalone components, Nx monorepos
+- React, Vue.js, Next.js, Redux, TanStack Query, Vite
 
-### Software & Tools
-- [TOOL_LIST]
+### Mobile
+- Capacitor + Angular, Trapeze (multi-app native config), FCM push, Fastlane CI/CD, Google Play Console, App Store Connect
+
+### Databases
+- MSSQL (EF Core), PostgreSQL (TypeORM), MongoDB (Mongoose), SQL
+
+### DevOps & Tools
+- GitLab CI/CD, GitHub Actions, Docker, Fastlane, Git, Playwright (e2e), Jest, Supertest
+
+### Other
+- Python, LLM APIs (Gemini), AI-powered developer tooling
+
+## Certifications
+- **Software Design and Architecture Specialization** - University of Alberta / Coursera (courses: Design Patterns, Service-Oriented Architecture, Software Architecture, Object-Oriented Design)
+- **Web Development Nanodegree** - Udacity (2022)
+
+## Activities
+- Coding Instructor (volunteer) - Semicolon
 
 ## Publications
-<!-- List peer-reviewed publications, if any -->
-1. [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL]. [DOI_LINK]
+None.
 
 ## Awards
-- [AWARD] - [EVENT] ([YEAR])
+- Company-wide knowledge-sharing session recognized as best KS session at GAMP
 
 ## References
-- [NAME], [TITLE], [COMPANY] ([EMAIL], [PHONE])
+- **Dominika Gawara** - COO & Board Member, GAMP. dominika.gawara@gamp.pl, +48 500 000 103, linkedin.com/in/dominika-gawara
+  Quote: "This is exactly the profile of a strong fullstack engineer, someone who improves the system he works in, not only the tickets he is given."
 
 More references available upon request.
