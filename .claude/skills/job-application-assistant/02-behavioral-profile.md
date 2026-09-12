@@ -25,6 +25,7 @@ Hazem Lenin has no formal behavioral assessment on file. Self-reported traits (f
 - **Invests in engineering culture:** Mentoring, knowledge-sharing sessions, co-authored company competency matrix, volunteer coding instructor. *[Inferred from LinkedIn About - review before relying on this]*
 - **Active open-source contributor:** Builds and maintains own projects (Merge Polisher, Learn Flow). *[Inferred from LinkedIn About - review before relying on this]*
 - **Improves the system, not just the ticket:** Reference letter (Dominika Gawara, COO, GAMP) confirms: "someone who improves the system he works in, not only the tickets he is given" - citing build-time cuts, Fastlane release automation, Nx monorepo restructuring, kiosk/hardware integration, and raising MR quality team-wide via Merge Polisher. *[Confirmed by reference letter, not just inferred]*
+- **Note:** the kiosk/paystation hardware work (Pay-Station module) was built and maintained together with two colleagues, per the reference letter - not solo. *[Confirmed by reference letter]*
 - **Earns senior-level trust fast:** Was the youngest engineer on the GAMP team, yet within months was trusted with work typically given to senior developers, including production systems clients depend on daily. *[Source: Reference letter]*
 
 ## How You Work Best

@@ -37,8 +37,9 @@ a hard no, not a gap to smooth over. -->
 
 ### Software Engineer - GAMP (Mar 2024 - Jul 2026)
 Alexandria, Egypt (IT Services & Software Development; enterprise clients in Poland)
-- Software engineer on GapMap, a modular B2B partition management platform serving enterprise clients in Poland (Renk, ZRRT); owned the Contractors module end-to-end across .NET Core API and Angular - domain modelling, EF Core schema, API design, and UI components
+- Software engineer on GapMap, a modular B2B partition management platform for agricultural trade markets, serving enterprise clients in Poland (Renk, ZRRT); digitizes the sale of trading stands, subscriptions, and entry tickets, handles payments, and controls vehicle traffic through integrations with LPR cameras, gate barriers, payment terminals, and fiscal devices; owned the Contractors module end-to-end across .NET Core API and Angular - domain modelling, EF Core schema, API design, and UI components
 - Built full-stack features spanning MFA (Identity Server, recovery codes), PayU payments, subscriptions, shipment, a cross-platform feature-toggle system, and raw TCP socket integration with ethernet-connected printers
+- Integrated GapMap with external ERP systems used by enterprise clients in Poland, including Subiekt and Symfonia
 - Solely owned the mobile project - GapMap and eZRRT (Capacitor + Angular + Trapeze) with FCM push, native config, Fastlane CI/CD, and Google Play/App Store releases; fully automated the release publish step so approved builds reach users without manual intervention
 - Responsible for Pay-Station, a kiosk-machine module within GapMap letting on-site customers pay for their parking time - kiosk UI, payment flow, and hardware/printer integration
 - Applied Clean Architecture, Repository pattern, CQRS (MediatR), and SignalR across .NET Core services; co-led a 2-month Nx monorepo restructure consolidating two large Angular apps (5 modules) into a shared component library; set up Playwright e2e testing
@@ -98,6 +99,12 @@ None.
 
 ## Awards
 - Company-wide knowledge-sharing session recognized as best KS session at GAMP
+
+## Deal-breakers
+- Rigid, restrictive work environments
+- Minimum salary when based in Egypt (including remote roles), location-dependent:
+  - Cairo (onsite or remote): 50,000 EGP/month
+  - Alexandria onsite: 30,000 EGP/month
 
 ## References
 - **Dominika Gawara** - COO & Board Member, GAMP. dominika.gawara@gamp.pl, +48 500 000 103, linkedin.com/in/dominika-gawara

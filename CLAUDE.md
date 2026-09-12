@@ -37,13 +37,14 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 ### Professional Experience
 - **Software Engineer** (Mar 2024 - Jul 2026) - **GAMP** (Alexandria, Egypt; enterprise clients in Poland)
   - Owns the Contractors module of GapMap (B2B partition management platform) end-to-end across .NET Core API and Angular
-  - Built MFA (Identity Server), PayU payments, subscriptions, feature-toggle system, TCP printer integration; solely owned the Capacitor mobile apps (GapMap, eZRRT) with Fastlane CI/CD and fully automated store releases
+  - Built MFA (Identity Server), PayU payments, subscriptions, feature-toggle system, TCP printer integration, ERP integrations (Subiekt, Symfonia); solely owned the Capacitor mobile apps (GapMap, eZRRT) with Fastlane CI/CD and fully automated store releases
   - Cut calendar load time ~70% via API redesign and DB query optimization; consolidated 280+ EF Core migrations (~40% faster local builds); mentored 3 juniors; co-authored engineering competency matrix
-- **.NET Developer** (Oct 2021 - Mar 2024) - **Pixel Academy** (Alexandria, Egypt)
+- **Software Engineer** (Oct 2021 - Mar 2024) - **Pixel Academy** (Alexandria, Egypt)
+  - Built a course-center management system with C# ASP.NET Core, Razor Pages, and MSSQL, deployed on IIS, with React and Angular for select frontend modules; also built an offline desktop version with two-way sync and an Excel-to-live-data pipeline
+  - Designed a tailored attendance system cross-referencing attendance history against exam attendance and delivered content, calculating student charges under weekly, monthly, or custom billing plans
+- **Full Stack Developer** (Oct 2020 - Jun 2021) - **Pixel Stamp** (Alexandria, Egypt)
   - Architected e-learning platforms with Django REST Framework; built a learning-center management system (appointments, scheduling, pricing, financial reporting)
   - Delivered frontend features in React, Vue.js, and Next.js
-- **Web Developer** (Oct 2020 - Jun 2021) - **Pixel Stamp** (Alexandria, Egypt)
-  - Built web applications and landing pages
 
 ### Technical Skills
 - **Primary:** .NET Core (Clean Architecture, CQRS/MediatR, SignalR, EF Core), Angular (Signals, standalone components, Nx), NestJS (microservices, RabbitMQ)
@@ -80,7 +81,9 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 <!-- Hard constraints on job search. Language requirements are handled separately and
 automatically from your Languages table above - don't duplicate them here. -->
 - Rigid, restrictive work environments
-- Minimum salary: 1300 USD/month when based in Egypt (including remote roles)
+- Minimum salary when based in Egypt (including remote roles), location-dependent:
+  - Cairo (onsite or remote): 50,000 EGP/month
+  - Alexandria onsite: 30,000 EGP/month
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

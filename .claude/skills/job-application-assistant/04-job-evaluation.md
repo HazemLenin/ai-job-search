@@ -247,6 +247,15 @@ consumer benefits.
 - **Weak Fit** (30-44): Probably skip unless strategic reasons
 - **Poor Fit** (<30): Skip
 
+## Calibration from Past Applications
+
+- **Fit score does not predict response so far.** Loynova (fit 81) and FlairsTech (fit 77) - both high computed scores - ended in direct rejection with no interview stage reached. Do not treat a high fit score as a signal the employer will respond; it only measures how well the candidate matches the posting on paper.
+- **Recruitment-agency channel, small sample, watch this:** Spencer Scott, Solas IT Recruitment, and Tenth Revolution Group (3/3 recruiter-mediated applications) were all rejected within days, no interview stage reached. May reflect agency-side keyword/ATS filtering rather than genuine misfit - not yet a confirmed pattern.
+- **Vertex "AI-Native Software Engineer (Full-Stack)" reached a phone screen** (2026-08-11) before being redirected to a different role, rejected specifically for lack of AI-native/agentic-tooling-specific depth, not general full-stack capability. Confirms general .NET/Angular/full-stack skills pass initial screens; the gap is role-specific AI-native tooling depth, not general software engineering competence.
+- 11 applications resolved 2026-08-10 to 2026-08-21, nearly all direct rejections with no interview stage, spanning fintech, e-commerce, IT services, and recruiter-mediated postings - no single common factor identified yet beyond the two notes above.
+- **Entry-level-labeled postings risk rejection on seniority mismatch even with strong skill match:** lo la (fit 62, rejected 2026-08-20) was posted as "Entry-level" against a 5+yr profile - skills lined up but the seniority label likely filtered the application regardless.
+- **Nawy: 2/2 applications rejected.** The second (Senior Full Stack Developer, fit 40, rejected 2026-08-21) diverged on core stack (Ruby/Node, not primary). Unlike Loynova/FlairsTech (high fit score, still rejected), this case shows a low computed fit score correctly predicting rejection when the stack genuinely diverges - the framework's scoring is not uniformly non-predictive, just unreliable on high scores so far.
+
 ## Pre-Application: Call the Employer (Best Practice)
 
 Before writing the application, consider whether the candidate should call the contact person listed in the posting. **Only call if there are substantive questions** - never call just to "be remembered."
