@@ -76,6 +76,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 ### Target Sectors
 - Mid-senior .NET / backend / full-stack / Angular / mobile roles
 - Remote worldwide, Egypt, or relocation to Gulf/EU
+- Will relocate to Cairo for any onsite role
 
 ### Deal-breakers
 <!-- Hard constraints on job search. Language requirements are handled separately and

@@ -13,7 +13,7 @@ framework_version: 1.1.1
 - **GitHub:** https://github.com/HazemLenin
 - **Portfolio:** https://hazemlenin.github.io
 - **Status:** GAMP's Egyptian branch is closing 30 Jul 2026 (business reasons, unrelated to performance); actively seeking new opportunities, available immediately after
-- **Constraints:** Based in Alexandria, Egypt; open to remote and on-site
+- **Constraints:** Based in Alexandria, Egypt; open to remote and on-site; will relocate to Cairo for any onsite role
 
 ### Languages
 <!-- Every language you can work in professionally, with your honest level. Used by the
